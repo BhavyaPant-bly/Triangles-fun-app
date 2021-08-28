@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+    --primary-color:rgb(71, 71, 214);
+    --sec-color:  #374151;
+    --ter-color:white;
+}
+
 #Displaysides,#DisplaybaseHeight, #DisplaySpecial, #DisplayEquilateral, #DisplayIsosceles, #Area, #hypotenuse{
     display:none;
 }
 body{
-    color:darkblue
+    color:var(--sec-color);
+    margin:0px;
 }
 .container{
     padding: 0rem 1rem;
-    background-color:rgba(27, 118, 238, 0.7) ;
+    background-color:#93C5FD;
     padding: 2rem;
     border-radius: 0.5rem;
-    border:2px solid darkblue
+    border:2px solid var(--sec-color)
 }
 .container-center {
     max-width :600px;
@@ -33,13 +41,13 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background: blue;
+    background: var(--primary-color);
     transform-origin:bottom left;
     transform:rotate(45deg);
 }
 .triangle{
     position: absolute;
-    transform: translate(70.5%,-64%);
+    transform: translate(60.5%,-64%);
     background:transparent ;
     width:565px;
     height:400px;
@@ -55,16 +63,27 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background: blue;
+    background: var(--primary-color);
     transform-origin:bottom left;
     transform:rotate(45deg);
     
 }
-
+.t0{
+    padding-bottom: 17rem;
+}
+.t1{
+    transform: translate(80%,20%);
+}
+.t2{
+    transform: translate(170%,20%);
+}
+.t3{
+    transform: translate(260%,20%);
+}
 .link {
     position:relative;
     text-decoration: none;
-    color: white;
+    color: var(--ter-color);
     font-size: 150%;
 
 }
@@ -72,8 +91,8 @@ body{
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-left: 47%;
-    color: white;
-    background-color: darkblue;
+    color: var(--ter-color);
+    background-color: var(--sec-color);
     border-radius: 0.5rem;
     font-weight: bold;
 }
@@ -81,8 +100,8 @@ a:hover{
     font-weight: bolder;
 }
 h1{
-    font-size:250%;
-    color:darkblue;
+    font-size:300%;
+    color:var(--sec-color);
 }
 .space{
     padding-bottom:2.5rem;
@@ -90,22 +109,22 @@ h1{
 input[type=button]{
     width:50%;
     height:30px;
-    color:white;
-    background-color: darkblue;
+    color:var(--ter-color);
+    background-color: var(--sec-color);
 }
 input[type=submit]{
     width:15%;
     height:25px;
     border-radius: 0.5rem;
-    color:white;
-    background-color: darkblue;
+    color:var(--ter-color);
+    background-color: var(--sec-color);
 }
 button{
     width:15%;
     height:25px;
     border-radius: 0.5rem;
-    color:white;
-    background-color: darkblue;
+    color:var(--ter-color);
+    background-color: var(--sec-color);
 }
 input[type=number]{
     width:20%;
@@ -114,7 +133,7 @@ input[type=number]{
 }
 .checkbox{
     padding: 0rem 1rem;
-    color:darkblue;
+    color:var(--sec-color);
     font-weight:bold;
     
 }
@@ -122,23 +141,78 @@ input[type=number]{
 #Valid{
     text-align:center;
     padding:1rem;
-    color:white;
+    color:var(--ter-color);
 }
 
 #result
 {
     margin-left:40%;
     padding:1rem;
-    color:white;
+    color:var(--ter-color);
 }
 .answer{
     text-align: center;
-    color:white;
+    color:var(--ter-color);
     padding:1rem;
 }
 
 #quizsubmit{
     border-radius:0px;
     height:30px;
+
+}
+.footer{
+    text-align: center ;
+    padding-bottom: 3rem;
+    color:var(--ter-color);
+    background-color:var(--sec-color);
+    padding-top: 2rem;
+    font-size: 150%;
+}
+.footer a:hover{
+
+    color:cadetblue;
+}
+
+.linkfooter {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--ter-color);
+}
+
+@media screen and (max-width:800px){
+    .triangle{
+        transform: translate(20%,-10%);
+        width:40%;
+        height:40%;
+        background: var(--primary-color);
+        border-radius: 0.5rem;
+    border:2px solid var(--sec-color);
+    }
+    .triangledown{
+        width:40%;
+        height:40%;
+        background: var(--primary-color);
+        border-radius: 0.5rem;
+    border:2px solid var(--sec-color);
+    }
+    .t0{
+        padding-bottom: 40%;
+    }
+    .t1{
+        transform: translate(125%,-21%);
+        /* padding-bottom: 4.5rem; */
+    }
+    .t2{
+        transform: translate(20%,87%);
+        /* padding-bottom: 4.5rem; */
+    }
+    .t3{
+        transform: translate(125%,87%);
+        /* padding-bottom: 4.5rem; */
+    }
+    h1{
+        font-size: 250%;
+    }
 
 }
