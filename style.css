@@ -179,7 +179,7 @@ input[type=number]{
     padding: 0.5rem 1rem;
     color: var(--ter-color);
 }
-
+/* 
 @media screen and (max-width:800px){
     .triangle{
         transform: translate(20%,-10%);
@@ -201,18 +201,16 @@ input[type=number]{
     }
     .t1{
         transform: translate(125%,-21%);
-        /* padding-bottom: 4.5rem; */
     }
     .t2{
         transform: translate(20%,87%);
-        /* padding-bottom: 4.5rem; */
     }
     .t3{
         transform: translate(125%,87%);
-        /* padding-bottom: 4.5rem; */
+        
     }
     h1{
         font-size: 250%;
     }
 
-}
+} */
