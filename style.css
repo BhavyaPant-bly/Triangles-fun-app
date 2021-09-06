@@ -66,27 +66,27 @@ h1{
     padding-bottom:2.5rem;
 }
 input[type=button]{
-    width:50%;
+    width:auto;
     height:30px;
     color:var(--ter-color);
     background-color: var(--sec-color);
 }
 input[type=submit]{
-    width:15%;
+    width:auto;
     height:25px;
     border-radius: 0.5rem;
     color:var(--ter-color);
     background-color: var(--sec-color);
 }
 button{
-    width:15%;
+    width:auto;
     height:25px;
     border-radius: 0.5rem;
     color:var(--ter-color);
     background-color: var(--sec-color);
 }
 input[type=number]{
-    width:20%;
+    width:auto;
     height:30px;
     border-radius: 0.5rem;
 }
