@@ -154,10 +154,9 @@ input[type=number]{
         margin-left:20%;
     }
     h1{
-        margin:10%;
+        font-size:250%;
     }
     .footer{
-        margin-top:10%;
         font-size:120%
     }
 }
