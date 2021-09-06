@@ -25,10 +25,8 @@ function scorecalculator(){
   res.style.border="2px solid black"
 }
 
+
 // for Area
-
-
-
 function Display(a) {
   // var dis = document.choice.disp.value;
   console.log(a);
@@ -126,7 +124,7 @@ function CalcHypotenuse()
   Output.style.display="block";
   Output.textContent="Hypotenuse = "+`${hypotenuse}`;
   Output.style.backgroundColor="darkblue";
-Output.style.border="2px solid black"
+  Output.style.border="2px solid black"
 
 }
 function CheckValidity(){
