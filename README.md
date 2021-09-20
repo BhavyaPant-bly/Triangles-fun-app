@@ -1,2 +1,2 @@
 # Triangles fun app
- contains an app for learning more about triangles
+ This Repository contains code for a Web App made using Vanilla Js,HTML and CSS for learning more about Triangles.
