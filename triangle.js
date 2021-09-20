@@ -15,7 +15,7 @@ function scorecalculator(){
   var res=document.getElementById("result");
   for(var i=0; i<QA.length;i++)
    {
-      if(answers[i]==QA[i])
+      if(answers[i]===QA[i])
       score++;
     
    }
@@ -66,8 +66,18 @@ switch(x){
   case 1: var a=parseFloat(document.querySelector("#side1").value);
           var b=parseFloat(document.querySelector("#side2").value);
           var c=parseFloat(document.querySelector("#side3").value);
+          if(a+b<=c||b+c<=a||c+a<=b)
+           {
+            Output.style.display="block"
+            Output.textContent="Enter valid sides! Sum of any Two sides should always be greater than the Third Side";
+            Output.style.backgroundColor="darkblue";
+            Output.style.border="2px solid black"
+            return
+           }
+          else{ 
           var s=(a+b+c)/2;
           Area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+          }
           break;
   case 2: var b=parseFloat(document.querySelector("#base").value);
           var h=parseFloat(document.querySelector("#height").value);
